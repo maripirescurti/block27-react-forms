@@ -5,11 +5,13 @@ import Authenticate from './components/Authenticate'
 
 export default function App() {
   const [token, setToken] = useState(null);
+  const [username, setUsername] = useState(null);
 
   return (
     <>
-      <SignUpForm token={token} setToken={setToken} />
-      <Authenticate token={token} setToken={setToken} />
+      <SignUpForm setToken={setToken} />
+      <Authenticate token={token} setUsername={setUsername}/>
+      {username && <h3>Logged in as: {username}</h3>}
     </>
   )
 }

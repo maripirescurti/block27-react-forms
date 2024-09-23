@@ -5,6 +5,7 @@
   text-align: center;
 }
 
+
 .logo {
   height: 6em;
   padding: 1.5em;
@@ -40,3 +41,28 @@
 .read-the-docs {
   color: #888;
 }
+
+.error-message {
+  color: red;
+  background-color: white;
+  border: 1px red solid;
+  padding: .5em;
+}
+
+label {
+  display: block;
+  padding: 1em;
+}
+
+input {
+  display: block;
+}
+
+form {
+  padding: 1em;
+}
+
+h2 {
+  margin-top: 2em;
+}
+
